@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/flexbox.css" />
+    <link rel="stylesheet" href="css/sobreProjetos/sobreProjetos.css"/>
   </head>
   <body>
     <header class="cabecalhoPrincipal">
@@ -15,24 +16,12 @@
         <h1 class="cabecalhoPrincipal-titulo">
           <a href="#">Projetos</a>
         </h1>
-
-        <nav class="cabecalhoPrincipal-nav">
-          <a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
-          <a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a>
-          <a class="cabecalhoPrincipal-nav-link" href="#">Sobre nós</a>
-          <a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
-          <a
-            class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app"
-            href="#"
-            >Nosso APP</a
-          >
-        </nav>
       </div>
     </header>
 
     <main class="conteudoPrincipal">
       <div class="container">
-        <h2 class="subtitulo">Nossos cursos</h2>
+        <h2 class="subtitulo" id="meus-projetos">Meus Projetos</h2>
 
         <nav>
           <ul class="conteudoPrincipal-cursos">
@@ -43,7 +32,7 @@
             </li>
             <li class="conteudoPrincipal-cursos-link">
               <a href="https://geovanne1.github.io/acessibilidade-web/"
-                >Apeperia</a
+                >Acessibilidade</a
               >
             </li>
             <li class="conteudoPrincipal-cursos-link">
@@ -60,19 +49,98 @@
               >
             </li>
             <li class="conteudoPrincipal-cursos-link">
-              <a
-                href="https://geovanne1.github.io/javascript-web-pagina-dinamica/"
-                >dinamisno-javascript</a
+              <a href="https://geovanne1.github.io/javascript-web/"
+                >Javascript-Web</a
               >
             </li>
             <li class="conteudoPrincipal-cursos-link">
-              <a href="https://geovanne1.github.io/javascript-web/"
-                >Javascript-Web</a
+              <a
+              href="https://geovanne1.github.io/javascript-web-pagina-dinamica/"
+              >dinamismo-javascript</a
               >
             </li>
           </ul>
         </nav>
       </div>
+      <section class="container" id="sobre-projetos">
+        <h2 class="sobre-titulo">Sobre os Projetos</h2>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Barbearia</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto da Barbearia foi uma sequência de cursos sobre html e css.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            No html foi ensinado sobre a estrutura básica do documento, as tags,
+            a separação que é feita entre a head(cabeça) e o body(corpo) da
+            página.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            Na cabeça fica todas as informações que a página vai usar para
+            funcionar, como por exemplo as meta tags a localização do arquivo
+            css entre outras.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            No corpo fica toda a parte que será exibida para o usuário. O corpo
+            é dividido em trés partes header(cabeçalho), main(conteúdo) e o
+            footer(rodapé), e dentro deles tem várias subdivisões que pode ou
+            não serem atribuídas.
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Acessibilidade</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto de acessibilidade foi pra mostrar a importância de deixar o seu projeto o mais acessível possível, e ensina como fazer isso.            
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            O site foi testado com o software NVDA, um leitor de tela para pessoas com eficiência visual, todas as imagens com uma descrição a estrutura da página totalmente repensada para um melhor intendimento.
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Flexbox/Grid</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto de Flebox/Grid tem um foco no posicionamento com estilos(css) uma funcionalidade do css que vem facilitando muito para os programadores.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            Antes dessas ferramentas o posicionamento de elementos era uma tarefa que exigia muito tempo e tinha muitas complicação, principalmente para responsividade(ajuste da layout para telas de diferentes tamanhos).
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Grid</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto Grid, é um aprofundamento a ferramenta.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            Por se tratar de uma ferramenta com várias funcionalidades diferentes é um ótimo projeto para conhecer um pouco mais sobre cade uma delas
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Arquitetura-css</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto tem grande parte do seu foco em mostrar as convenções usadas pala comunidade de programadores.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            Como nomear as classes, como organizar o css em várias pastas para facilitar caso tenha que ser feita uma mudança no design da página, organizar todas as ferramentas por ondem alfabética para facilitar a localização da cada uma delas
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">JavaScript-Web</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto JavaScript mostra as principais ferramentas que podem ser usadas para implementar funcionalidades que não são possíveis só com html e css.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            É possíveis adicionar um paciente, procurar os pacientes pelo nome, o calculo do imc é feito automaticamente, caso tente adicionar um paciente que não tenha nem o peso e nem a altura permitida o sistema não deixa.
+          </p>
+          <p class="sobre-conteudo__paragrafo">
+            O código pega uma lista externa de pacientes e implementa na tabela, caso tenha digitado errado ou queira apagar um paciente da tabela basta clicar duas vezes no paciente que ele será eliminado.
+          </p>
+        </div>
+        <div class="sobre-conteudo">
+          <h3 class="sobre-conteudo__titulo">Dinamismo</h3>
+          <p class="sobre-conteudo__paragrafo">
+            O projeto de Dinamismo tem como foco mostrar de uma forma interativa a implementação de JavaScript usando botões para ativer elementos ocultos no código.
+          </p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
